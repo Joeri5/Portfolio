@@ -345,6 +345,35 @@ img {
               font-size: 200%;
               font-weight: 200;
             }
+
+            & .button_page {
+              margin-top: 25px;
+              display: flex;
+              font-weight: 400;
+              font-size: 120%;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              width: 310px;
+              height: 45px;
+              border-radius: 5px;
+              background: $primary-color;
+              color: white;
+              text-decoration: none;
+              transition: all 0.2s;
+
+              &:hover {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                transform: scale(1.05);
+              }
+
+              & > img {
+                margin-left: 5px;
+                width: 30px;
+                height: 30px;
+              }
+            }
           }
         }
       }
@@ -395,6 +424,7 @@ img {
       transition: all 1s;
 
       &:hover {
+        cursor: pointer;
         background: none;
         background-color: #003a61;
       }
@@ -411,21 +441,89 @@ img {
         color: white;
         text-transform: uppercase;
         text-align: center;
-        opacity: 0.8;
-        transition: all 0.8s;
 
         &:hover {
-          opacity: 1;
+          & > h3 {
+            font-size: 525%;
+          }
+
+          & > span {
+            font-size: 325%;
+          }
         }
 
         & > h3 {
           font-size: 500%;
           font-weight: 400;
+          transition: all 0.2s;
         }
 
         & > span {
           font-size: 300%;
           font-weight: 200;
+          transition: all 0.2s;
+          margin-bottom: 25px;
+        }
+
+        & .buttonwrapper {
+          display: flex;
+          gap: 20px;
+
+          & .button_sourcecode {
+            display: flex;
+            font-weight: 400;
+            font-size: 120%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 175px;
+            height: 45px;
+            border-radius: 5px;
+            background: $primary-color;
+            color: white;
+            text-decoration: none;
+            transition: all 0.2s;
+
+            &:hover {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              transform: scale(1.05);
+            }
+
+            & > img {
+              margin-left: 5px;
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          & .button_page {
+            display: flex;
+            font-weight: 400;
+            font-size: 120%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 175px;
+            height: 45px;
+            border-radius: 5px;
+            background: $tertiary-color;
+            color: white;
+            text-decoration: none;
+            transition: all 0.2s;
+
+            &:hover {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              transform: scale(1.05);
+            }
+
+            & > img {
+              margin-left: 5px;
+              width: 30px;
+              height: 30px;
+            }
+          }
         }
       }
     }

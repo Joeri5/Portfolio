@@ -386,6 +386,43 @@ img {
   font-weight: 200;
 }
 
+.portfolio > .portfolio__wrapper > .portfolio__featured > .portfolio__featured__card > figure > div .button_page {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 120%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 310px;
+  height: 45px;
+  border-radius: 5px;
+  background: #f01e37;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.portfolio > .portfolio__wrapper > .portfolio__featured > .portfolio__featured__card > figure > div .button_page:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.portfolio > .portfolio__wrapper > .portfolio__featured > .portfolio__featured__card > figure > div .button_page > img {
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+}
+
 .portfolio__projects {
   padding: 0 100px;
 }
@@ -442,6 +479,7 @@ img {
 }
 
 .portfolio__projects > .portfolio__projects__grid > .project__card:hover {
+  cursor: pointer;
   background: none;
   background-color: #003a61;
 }
@@ -467,23 +505,108 @@ img {
   color: white;
   text-transform: uppercase;
   text-align: center;
-  opacity: 0.8;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 
-.portfolio__projects > .portfolio__projects__grid > .project__card > div:hover {
-  opacity: 1;
+.portfolio__projects > .portfolio__projects__grid > .project__card > div:hover > h3 {
+  font-size: 525%;
+}
+
+.portfolio__projects > .portfolio__projects__grid > .project__card > div:hover > span {
+  font-size: 325%;
 }
 
 .portfolio__projects > .portfolio__projects__grid > .project__card > div > h3 {
   font-size: 500%;
   font-weight: 400;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .portfolio__projects > .portfolio__projects__grid > .project__card > div > span {
   font-size: 300%;
   font-weight: 200;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-bottom: 25px;
+}
+
+.portfolio__projects > .portfolio__projects__grid > .project__card > div .buttonwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.portfolio__projects > .portfolio__projects__grid > .project__card > div .buttonwrapper .button_sourcecode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 120%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 175px;
+  height: 45px;
+  border-radius: 5px;
+  background: #f01e37;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.portfolio__projects > .portfolio__projects__grid > .project__card > div .buttonwrapper .button_sourcecode:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.portfolio__projects > .portfolio__projects__grid > .project__card > div .buttonwrapper .button_sourcecode > img {
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.portfolio__projects > .portfolio__projects__grid > .project__card > div .buttonwrapper .button_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 120%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 175px;
+  height: 45px;
+  border-radius: 5px;
+  background: #d8e3e8;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.portfolio__projects > .portfolio__projects__grid > .project__card > div .buttonwrapper .button_page:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.portfolio__projects > .portfolio__projects__grid > .project__card > div .buttonwrapper .button_page > img {
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 .contact {
