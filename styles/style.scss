@@ -467,7 +467,7 @@ img {
 
         & .buttonwrapper {
           display: flex;
-          gap: 20px;
+          gap: 25px;
 
           & .button_sourcecode {
             display: flex;
@@ -531,7 +531,7 @@ img {
 }
 
 .contact {
-  height: 100vh;
+  height: 105vh;
   background: $tertiary-color;
 
   & > .contact__wrapper {
@@ -571,19 +571,60 @@ img {
     }
 
     & > .details__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $secondary-color;
+      border-radius: 15px;
+      margin-top: 125px;
+      width: 800px;
+      height: 525px;
       list-style: none;
+      gap: 25px;
 
-      & > li {
-        font-size: 24px;
-        color: white;
-        margin: 10px 0;
+      & > li > a {
         display: flex;
-        align-items: center;
+        flex-direction: row;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 130%;
         gap: 15px;
 
-        & > img {
-          height: 3em;
-          width: 3em;
+        & > .details_text {
+          margin-top: 10px;
+
+          h3 {
+            font-weight: 500;
+          }
+
+          span {
+            font-weight: 200;
+          }
+        }
+
+        & > .circle {
+          display: flex;
+          width: 90px;
+          height: 90px;
+          background-color: $primary-color;
+          border-radius: 20%;
+          color: white;
+          transition: all 0.2s;
+          font-weight: 300;
+
+          &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transform: scale(1.05);
+          }
+
+          & > img {
+            margin: 20px;
+            height: 50px;
+            width: 50px;
+          }
         }
       }
     }
