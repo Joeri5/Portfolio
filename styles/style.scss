@@ -570,63 +570,8 @@ img {
       }
     }
 
-    & > .details__wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: $secondary-color;
-      border-radius: 15px;
-      margin-top: 125px;
-      width: 800px;
-      height: 525px;
-      list-style: none;
-      gap: 25px;
-
-      & > li > a {
-        display: flex;
-        flex-direction: row;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        font-size: 130%;
-        gap: 15px;
-
-        & > .details_text {
-          margin-top: 10px;
-
-          h3 {
-            font-weight: 500;
-          }
-
-          span {
-            font-weight: 200;
-          }
-        }
-
-        & > .circle {
-          display: flex;
-          width: 90px;
-          height: 90px;
-          background-color: $primary-color;
-          border-radius: 20%;
-          color: white;
-          transition: all 0.2s;
-          font-weight: 300;
-
-          &:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-              0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            transform: scale(1.05);
-          }
-
-          & > img {
-            margin: 20px;
-            height: 50px;
-            width: 50px;
-          }
-        }
-      }
+    & > .contact_form {
+      margin: 75px 175px 0 0;
     }
   }
 }
