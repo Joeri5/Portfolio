@@ -610,7 +610,7 @@ img {
 }
 
 .contact {
-  height: 105vh;
+  height: 100vh;
   background: #d8e3e8;
 }
 
@@ -628,7 +628,7 @@ img {
 }
 
 .contact > .contact__wrapper > .contact__section__title > h2 {
-  padding: 0px 0 0 100px;
+  padding: 0px 0 100px 100px;
   color: white;
   font-weight: 400;
   font-size: 1000%;
@@ -637,7 +637,7 @@ img {
 }
 
 .contact > .contact__wrapper > .contact__section__title > h3 {
-  margin: -175px 0px 0 150px;
+  margin: -275px 0px 0px 150px;
   color: #003a61;
   font-size: 500%;
   font-weight: 400;
@@ -657,7 +657,8 @@ img {
 }
 
 .contact > .contact__wrapper > .contact_form {
-  margin: 75px 175px 0 0;
+  margin-left: -50px;
+  margin-top: 75px;
 }
 
 .footer {
@@ -680,13 +681,63 @@ img {
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 1800px) {
+  .main {
+    overflow: hidden;
+  }
+  .main .main__developer__bg {
+    font-size: 3100%;
+  }
+}
+
 @media only screen and (max-width: 1800px) {
+  .main {
+    overflow: hidden;
+  }
   .main > .main__robot {
     margin-right: -150px;
   }
 }
 
+@media only screen and (max-width: 1630px) {
+  .post__hero__section > .post__hero__section__text {
+    visibility: hidden;
+  }
+}
+
 @media only screen and (max-width: 1600px) {
+  .main {
+    overflow: hidden;
+  }
+  .main > .main__robot {
+    margin-right: -100px;
+    margin-bottom: -2px;
+  }
+  .contact {
+    margin-top: -100px;
+  }
+  .contact_form {
+    width: 500px;
+  }
+  .portfolio__projects > .portfolio__projects__grid > .project__card {
+    width: 47%;
+    height: 47%;
+  }
+  .portfolio__projects > .portfolio__projects__grid > .project__card > div:hover > h3 {
+    font-size: 475%;
+  }
+  .portfolio__projects > .portfolio__projects__grid > .project__card > div:hover > span {
+    font-size: 275%;
+  }
+  .portfolio__projects > .portfolio__projects__grid > .project__card > div > h3 {
+    font-size: 375%;
+  }
+  .portfolio__projects > .portfolio__projects__grid > .project__card > div > span {
+    font-size: 200%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
   .main > .main__robot {
     visibility: hidden;
   }
