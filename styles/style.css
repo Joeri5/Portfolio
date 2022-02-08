@@ -215,9 +215,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .about > .about__wrapper > .about__section__title {
@@ -699,9 +699,27 @@ img {
   }
 }
 
+@media only screen and (max-width: 1700px) {
+  .portfolio__section__title {
+    margin-right: -25px;
+  }
+  .contact__section__title {
+    margin-left: -25px;
+  }
+  .contact_form {
+    margin-right: 75px;
+  }
+}
+
 @media only screen and (max-width: 1630px) {
-  .post__hero__section > .post__hero__section__text {
-    visibility: hidden;
+  .post__hero__section {
+    padding: 75px;
+  }
+  .about__section__title {
+    margin-left: 100px;
+  }
+  .portfolio__section__title {
+    margin-right: -50px;
   }
 }
 
@@ -712,6 +730,9 @@ img {
   .main > .main__robot {
     margin-right: -100px;
     margin-bottom: -2px;
+  }
+  .portfolio__section__title {
+    margin-right: -75px;
   }
   .contact {
     margin-top: -100px;
@@ -740,6 +761,9 @@ img {
 @media only screen and (max-width: 1500px) {
   .main > .main__robot {
     visibility: hidden;
+  }
+  .portfolio__featured > h3 {
+    padding-left: -50px;
   }
 }
 
