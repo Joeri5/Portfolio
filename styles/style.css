@@ -610,7 +610,7 @@ img {
 }
 
 .contact {
-  height: 100vh;
+  height: 105vh;
   background: #d8e3e8;
 }
 
@@ -621,6 +621,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: -100px;
 }
 
 .contact > .contact__wrapper > .contact__section__title {
@@ -628,7 +629,7 @@ img {
 }
 
 .contact > .contact__wrapper > .contact__section__title > h2 {
-  padding: 0px 0 100px 100px;
+  padding: 0px 0 0px 100px;
   color: white;
   font-weight: 400;
   font-size: 1000%;
@@ -637,7 +638,7 @@ img {
 }
 
 .contact > .contact__wrapper > .contact__section__title > h3 {
-  margin: -275px 0px 0px 150px;
+  margin: -175px 0px 0px 150px;
   color: #003a61;
   font-size: 500%;
   font-weight: 400;
@@ -658,7 +659,7 @@ img {
 
 .contact > .contact__wrapper > .contact_form {
   margin-left: -50px;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 .footer {
@@ -696,74 +697,244 @@ img {
   }
   .main > .main__robot {
     margin-right: -150px;
+    overflow: hidden;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > img {
+    overflow: hidden;
   }
 }
 
 @media only screen and (max-width: 1700px) {
-  .portfolio__section__title {
-    margin-right: -25px;
+  .about > .about__wrapper {
+    padding-top: 50px;
+    padding-left: 75px;
   }
-  .contact__section__title {
-    margin-left: -25px;
+  .about > .about__wrapper > .about__section__title > h2 {
+    font-size: 1000%;
+  }
+  .about > .about__wrapper > .about__section__title > h3 {
+    font-size: 500%;
+  }
+  .about > .about__wrapper > .about__section__title > img {
+    width: 836px;
+    height: 836px;
+  }
+  .portfolio > .portfolio__wrapper {
+    padding-bottom: 75px;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title {
+    margin: 20px 0px 0 0;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > h2 {
+    font-size: 1000%;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > h3 {
+    font-size: 500%;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > img {
+    margin-left: 50px;
+    width: 736px;
+    height: 736px;
   }
   .contact_form {
-    margin-right: 75px;
+    padding-right: 100px;
   }
 }
 
 @media only screen and (max-width: 1630px) {
   .post__hero__section {
-    padding: 75px;
+    margin: 0 -50px 0 -50px;
   }
-  .about__section__title {
-    margin-left: 100px;
+  .portfolio > .portfolio__wrapper {
+    padding-bottom: 75px;
   }
-  .portfolio__section__title {
-    margin-right: -50px;
+  .portfolio > .portfolio__wrapper > .portfolio__section__title {
+    margin: 40px -30px 0 0;
   }
 }
 
 @media only screen and (max-width: 1600px) {
-  .main {
+  .main > .main__robot {
     overflow: hidden;
   }
-  .main > .main__robot {
-    margin-right: -100px;
-    margin-bottom: -2px;
+  .about > .about__wrapper {
+    padding-top: 50px;
+    padding-left: 75px;
   }
-  .portfolio__section__title {
-    margin-right: -75px;
+  .about > .about__wrapper > .about__section__title > h2 {
+    font-size: 900%;
   }
-  .contact {
-    margin-top: -100px;
+  .about > .about__wrapper > .about__section__title > h3 {
+    padding-top: 20px;
+    font-size: 450%;
   }
-  .contact_form {
-    width: 500px;
+  .about > .about__wrapper > .about__section__title > img {
+    width: 756px;
+    height: 756px;
   }
-  .portfolio__projects > .portfolio__projects__grid > .project__card {
-    width: 47%;
-    height: 47%;
+  .portfolio > .portfolio__wrapper {
+    padding-bottom: 75px;
   }
-  .portfolio__projects > .portfolio__projects__grid > .project__card > div:hover > h3 {
-    font-size: 475%;
+  .portfolio > .portfolio__wrapper > .portfolio__section__title {
+    margin: 40px -75px 0 0;
   }
-  .portfolio__projects > .portfolio__projects__grid > .project__card > div:hover > span {
-    font-size: 275%;
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > h2 {
+    font-size: 900%;
   }
-  .portfolio__projects > .portfolio__projects__grid > .project__card > div > h3 {
-    font-size: 375%;
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > h3 {
+    padding-top: 20px;
+    font-size: 450%;
   }
-  .portfolio__projects > .portfolio__projects__grid > .project__card > div > span {
-    font-size: 200%;
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > img {
+    width: 756px;
+    height: 756px;
+  }
+  .contact > .contact__wrapper > .contact__section__title {
+    margin-top: 25px;
+  }
+  .contact > .contact__wrapper > .contact__section__title > h2 {
+    font-size: 900%;
+  }
+  .contact > .contact__wrapper > .contact__section__title > h3 {
+    padding-top: 20px;
+    font-size: 450%;
+  }
+  .contact > .contact__wrapper > .contact__section__title > img {
+    width: 756px;
+    height: 756px;
   }
 }
 
 @media only screen and (max-width: 1500px) {
   .main > .main__robot {
-    visibility: hidden;
+    width: 800px;
+    height: 800px;
+    padding-right: 75px;
+    overflow: hidden;
+  }
+  .post__hero__graph {
+    padding-left: 50px;
+    width: 75%;
   }
   .portfolio__featured > h3 {
     padding-left: -50px;
+  }
+  .about {
+    padding-top: 125px;
+  }
+  .about > .about__wrapper {
+    padding-top: 50px;
+    padding-left: 75px;
+  }
+  .about > .about__wrapper > .about__section__title > h2 {
+    font-size: 800%;
+  }
+  .about > .about__wrapper > .about__section__title > h3 {
+    margin-top: -160px;
+    padding-top: 20px;
+    font-size: 400%;
+  }
+  .about > .about__wrapper > .about__section__title > img {
+    padding-left: 50px;
+    width: 656px;
+    height: 656px;
+  }
+  .portfolio {
+    margin-top: -100px;
+  }
+  .portfolio > .portfolio__wrapper {
+    margin: 0 25px 0 -25px;
+    padding-bottom: 175px;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title {
+    margin: 65px -75px 0 0;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > h2 {
+    font-size: 800%;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > h3 {
+    margin-top: -160px;
+    padding-top: 20px;
+    font-size: 400%;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > img {
+    width: 656px;
+    height: 656px;
+  }
+  .contact {
+    height: 100vh;
+    margin-top: 50px;
+  }
+  .contact > .contact__wrapper > .contact__section__title > h2 {
+    font-size: 800%;
+  }
+  .contact > .contact__wrapper > .contact__section__title > h3 {
+    margin-top: -160px;
+    padding-top: 20px;
+    font-size: 400%;
+  }
+  .contact > .contact__wrapper > .contact__section__title > img {
+    padding-left: 50px;
+    width: 656px;
+    height: 656px;
+  }
+}
+
+@media only screen and (max-width: 1425px) {
+  .main > .main__robot {
+    overflow: hidden;
+  }
+  .post__hero__section {
+    margin: 0 -75px 0 -75px;
+  }
+  .portfolio > .portfolio__wrapper {
+    margin: 0 15px 0 -50px;
+    padding-bottom: 175px;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__featured > h3 {
+    font-size: 400%;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title {
+    margin: 50px -75px 0 0;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > h2 {
+    font-size: 800%;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > h3 {
+    margin-top: -160px;
+    padding-top: 20px;
+    font-size: 400%;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__section__title > img {
+    width: 656px;
+    height: 656px;
+  }
+  .portfolio__projects {
+    padding: 0 50px;
+  }
+  .contact {
+    height: 100vh;
+    margin-top: 50px;
+  }
+  .contact > .contact__wrapper > .contact__section__title {
+    margin-left: -50px;
+  }
+  .contact > .contact__wrapper > .contact__section__title > h2 {
+    font-size: 800%;
+  }
+  .contact > .contact__wrapper > .contact__section__title > h3 {
+    margin-top: -160px;
+    padding-top: 20px;
+    font-size: 400%;
+  }
+  .contact > .contact__wrapper > .contact__section__title > img {
+    padding-left: 25px;
+    width: 656px;
+    height: 656px;
+  }
+  .contact > .contact__wrapper > .contact_form {
+    width: 60%;
+    padding: -100px;
   }
 }
 
