@@ -277,7 +277,7 @@ img {
 }
 
 .portfolio {
-  min-height: 200vh;
+  min-height: 210vh;
   background: #d8e3e8;
 }
 
@@ -720,10 +720,10 @@ img {
     height: 836px;
   }
   .portfolio > .portfolio__wrapper {
-    padding-bottom: 75px;
+    padding-bottom: 50px;
   }
   .portfolio > .portfolio__wrapper > .portfolio__section__title {
-    margin: 20px 0px 0 0;
+    margin: 40px 25px 0 0;
   }
   .portfolio > .portfolio__wrapper > .portfolio__section__title > h2 {
     font-size: 1000%;
@@ -736,8 +736,8 @@ img {
     width: 736px;
     height: 736px;
   }
-  .contact_form {
-    padding-right: 100px;
+  .contact > .contact__wrapper > .contact_form {
+    padding-right: 125px;
   }
 }
 
@@ -887,6 +887,9 @@ img {
   .post__hero__section {
     margin: 0 -75px 0 -75px;
   }
+  .about > .about__wrapper > .about__paragraphs {
+    gap: 100px;
+  }
   .portfolio > .portfolio__wrapper {
     margin: 0 15px 0 -50px;
     padding-bottom: 175px;
@@ -914,7 +917,6 @@ img {
   }
   .contact {
     height: 100vh;
-    margin-top: 50px;
   }
   .contact > .contact__wrapper > .contact__section__title {
     margin-left: -50px;
@@ -935,6 +937,60 @@ img {
   .contact > .contact__wrapper > .contact_form {
     width: 60%;
     padding: -100px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .post__hero__section {
+    font-size: 85%;
+    margin: 0 -50px 0 -50px;
+  }
+  .post__hero__section > div > .post__hero__graph {
+    width: 75%;
+  }
+  .about {
+    padding-top: 125px;
+  }
+  .about > .about__wrapper {
+    padding-top: 50px;
+    padding-left: 25px;
+  }
+  .about > .about__wrapper > .about__section__title {
+    padding-left: 100px;
+  }
+  .about > .about__wrapper > .about__section__title > h2 {
+    font-size: 800%;
+  }
+  .about > .about__wrapper > .about__section__title > h3 {
+    margin-top: -160px;
+    padding-top: 20px;
+    font-size: 400%;
+  }
+  .about > .about__wrapper > .about__section__title > img {
+    padding-left: 50px;
+    width: 656px;
+    height: 656px;
+  }
+  .about > .about__wrapper > .about__paragraphs {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .about > .about__wrapper > .about__paragraphs {
+    padding-right: 50px;
+    gap: 25px;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__featured > .portfolio__featured__card > figure {
+    width: 750px;
+    height: 475px;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__featured > .portfolio__featured__card > figure > img {
+    width: 35%;
+    height: 55%;
+  }
+  .portfolio > .portfolio__wrapper > .portfolio__featured > .portfolio__featured__card > figure > div {
+    padding: 125px 75px 0 0;
   }
 }
 
