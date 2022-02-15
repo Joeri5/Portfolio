@@ -13,7 +13,7 @@
     />
     <title>Joeri</title>
   </head>
-  <body>
+  <body id="js-body">
     <header id="top"></header>
     <main class="main">
       <img
@@ -22,12 +22,10 @@
         alt="Robot Illustration"
       />
       <span class="main__developer__bg">developer</span>
-
       <div class="main__top__wrapper">
         <h1 class="main__heading">
           <a href="/">JOERI.</a>
         </h1>
-
         <nav class="main__nav">
           <ul>
             <li>
@@ -44,10 +42,25 @@
             </li>
           </ul>
         </nav>
-        <button class="main__nav__togglebtn">toggle</button>
-        <nav id="js-hamburger"></nav>
+        <button id="js-button" class="main__nav__togglebtn">toggle</button>
+        <nav id="js-hamburger">
+          <ul>
+            <li>
+              <a href="#top">Home.</a>
+            </li>
+            <li>
+              <a href="#about">About.</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio.</a>
+            </li>
+            <li>
+              <a href="#contact">Contact.</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="main__hero__wrapper">
+      <div class="main__hero__wrapper" id="js-main-hero">
         <div class="main__hero__text">
           <h2>
             Hi. I am <span class="main__hero__text__outlined">Joeri</span>
@@ -292,5 +305,6 @@
     <footer class="footer">
       <h2>Made by Joeri.</h2>
     </footer>
+    <script src="/main.js"></script>
   </body>
 </html>

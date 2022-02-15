@@ -71,9 +71,45 @@ img {
     }
 
     & > .main__nav__togglebtn {
+      visibility: hidden;
       position: absolute;
       top: 50px;
       right: 50px;
+    }
+
+    & > #js-hamburger {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: $secondary-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.2s all;
+      height: 100vh;
+
+      & > ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+
+        & > li > a {
+          color: white;
+          -webkit-text-stroke: 2px $primary-color;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 300%;
+        }
+
+        & > li > a:hover {
+          color: $primary-color;
+        }
+      }
     }
 
     & > .main__nav {
@@ -1035,13 +1071,17 @@ img {
 }
 
 @media only screen and (max-width: 1200px) {
-  .main__nav {
-    & > ul {
-      visibility: hidden;
-    }
+  .main {
+    & > .main__top__wrapper {
+      & > .main__nav__togglebtn {
+        visibility: visible;
+      }
 
-    & > .main__nav__togglebtn {
-      opacity: 1;
+      & > .main__nav {
+        & > ul {
+          visibility: hidden;
+        }
+      }
     }
   }
 }
