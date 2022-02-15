@@ -17,7 +17,6 @@ button.onclick = function () {
 body.onscroll = function () {
   body.style.overflowY = "auto";
   nav.style.visibility = "hidden";
-  nav.style.transitionDuration = "0.8s"
   nav.style.opacity = "0";
   hero.style.visibility = "visible";
 }
