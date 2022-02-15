@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="htaccess" href=".htaccess" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -26,7 +27,7 @@
         <h1 class="main__heading">
           <a href="/">JOERI.</a>
         </h1>
-        <nav class="main__nav">
+        <nav id="navbar" class="main__nav">
           <ul>
             <li>
               <a href="#top">Home.</a>
@@ -42,20 +43,23 @@
             </li>
           </ul>
         </nav>
-        <button id="js-button" class="main__nav__togglebtn">toggle</button>
+        <button id="js-button" class="main__nav__togglebtn">
+          <img id="menuicon" src="images/menu.svg" />
+          <img id="menuiconhover" src="images/menuhover.svg" />
+        </button>
         <nav id="js-hamburger">
           <ul>
             <li>
-              <a href="#top">Home.</a>
+              <a id="menulink" href="#top">Home.</a>
             </li>
             <li>
-              <a href="#about">About.</a>
+              <a id="menulink" href="#about">About.</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio.</a>
+              <a id="menulink" href="#portfolio">Portfolio.</a>
             </li>
             <li>
-              <a href="#contact">Contact.</a>
+              <a id="menulink" href="#contact">Contact.</a>
             </li>
           </ul>
         </nav>
@@ -95,7 +99,6 @@
       <div>
         <img class="post__hero__graph" src="images/graph.svg" alt="Graph" />
       </div>
-
       <p class="post__hero__paragraph">
         Hi, I am Joeri! Welcome to my portfolio website. I'm a Front End web
         Developer, and Web Designer. My main Skills are HTML, CSS and
@@ -306,5 +309,26 @@
       <h2>Made by Joeri.</h2>
     </footer>
     <script src="/main.js"></script>
+    <script type="text/javascript">
+      // Original JavaScript code by Chirp Internet: chirpinternet.eu
+      // Please acknowledge use of this code by including this header.
+
+      document.querySelectorAll("a").forEach(function (current) {
+        if (!current.hash) return;
+        if (current.origin + current.pathname != self.location.href) return;
+        (function (anchorPoint) {
+          if (anchorPoint) {
+            current.addEventListener(
+              "click",
+              function (e) {
+                anchorPoint.scrollIntoView({ behavior: "smooth" });
+                e.preventDefault();
+              },
+              false
+            );
+          }
+        })(document.querySelector(current.hash));
+      });
+    </script>
   </body>
 </html>

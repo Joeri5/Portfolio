@@ -73,8 +73,28 @@ img {
     & > .main__nav__togglebtn {
       visibility: hidden;
       position: absolute;
-      top: 50px;
-      right: 50px;
+      top: 65px;
+      right: 75px;
+      background: none;
+      border: none;
+
+      & > img {
+        width: 6em;
+        height: 6em;
+        transform: scaleX(-1);
+        position: absolute;
+      }
+
+      & > img:hover {
+        cursor: pointer;
+      }
+
+      #menuiconhover {
+        width: 6em;
+        height: 6em;
+        position: relative;
+        visibility: hidden;
+      }
     }
 
     & > #js-hamburger {
@@ -91,6 +111,9 @@ img {
       opacity: 0;
       transition: 0.2s all;
       height: 100vh;
+      background-image: url("/images/background.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
 
       & > ul {
         list-style: none;
@@ -100,10 +123,10 @@ img {
 
         & > li > a {
           color: white;
-          -webkit-text-stroke: 2px $primary-color;
           text-decoration: none;
           text-transform: uppercase;
           font-size: 300%;
+          transition: 0.4s all;
         }
 
         & > li > a:hover {
@@ -1075,6 +1098,10 @@ img {
     & > .main__top__wrapper {
       & > .main__nav__togglebtn {
         visibility: visible;
+      }
+
+      & > #menuiconhover {
+        visibility: hidden;
       }
 
       & > .main__nav {
