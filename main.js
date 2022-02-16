@@ -19,7 +19,31 @@ body.onscroll = function () {
   nav.style.visibility = "hidden";
   nav.style.opacity = "0";
   hero.style.visibility = "visible";
-}
+};
+
+// window.onscroll = function () {
+//   myFunction();
+// };
+
+// var navbar = document.getElementById("navbar");
+// var list = document.getElementById("navbarlist");
+// var navbaritems = document.getElementById("navbaritem");
+// var sticky = navbar.offsetTop;
+
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky");
+//     navbar.style.height = "5em";
+//     navbar.style.width = "100vw";
+//     navbar.style.zIndex = "1";
+//     navbar.style.top = "0";
+//     navbar.style.background = "#f01e37"
+//     navbar.style.opacity = "50%"
+//   } else {
+//     navbar.classList.remove("sticky");
+
+//   }
+// }
 
 // navclose.onclick = function () {
 //   nav.style.visibility = "hidden";

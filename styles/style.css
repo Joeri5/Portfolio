@@ -20,6 +20,64 @@ body {
   overflow-x: hidden;
 }
 
+.top-btn {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 75px;
+  height: 75px;
+  font-size: 100px;
+  background: white;
+  border-radius: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: pop 3s infinite;
+  animation: pop 3s infinite;
+  cursor: pointer;
+  color: black;
+  z-index: 1;
+}
+
+.top-btn > img {
+  width: 70%;
+  height: 70%;
+}
+
+@-webkit-keyframes pop {
+  20%,
+  50%,
+  80%,
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes pop {
+  20%,
+  50%,
+  80%,
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
 img {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -31,6 +89,7 @@ img {
   position: relative;
   background-color: #f01e37;
   height: 100vh;
+  z-index: 2;
 }
 
 .main > .main__developer__bg {
@@ -164,13 +223,44 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main > .main__top__wrapper > .main__nav > ul > li > a {
+  display: block;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
   text-transform: uppercase;
   color: white;
   font-size: 225%;
+  -webkit-transition-delay: 2s all;
+          transition-delay: 2s all;
+}
+
+.main > .main__top__wrapper > .main__nav > ul > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.05em;
+  background-color: white;
+  opacity: 0;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  opacity: 1;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+}
+
+.main > .main__top__wrapper > .main__nav > ul > li > a:hover::after,
+.main > .main__top__wrapper > .main__nav > ul > li > a:focus::after {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .main > .main__hero__wrapper {
